@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>zly-a2568</title>
@@ -7,7 +7,7 @@
   <meta name="description" content="zly-a2568的博客">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="icon" href="/favicon.png" type="image/x-icon" />
-  <link rel="stylesheet" data-style-group="themeable" media="(prefers-color-scheme: dark)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+  <link rel="stylesheet" title="dark" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
   <link rel="stylesheet" href="./style/style.css">
   
 </head>
@@ -16,7 +16,6 @@
   <script>
     window.$docsify = {
       name: 'zly-a2568的博客',
-      repo: 'https://github.com/zly-a2568',
       themeColor: '#3F51B5',
       loadSidebar: true,
       el: '#app',
@@ -32,12 +31,15 @@
             buttonText: '复制',
             errorText: '错误',
             successText: '已复制'
-        }
+        },
+        maxLevel: 3,
+        subMaxLevel: 3,
+        loadNavbar: true,
     }
   </script>
-  <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="https://unpkg.com/docsify-themeable"></script>
+  <script src="https://unpkg.com/docsify/lib/plugins/search.js"></script>
   <!-- 代码拷贝 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
   <!-- 图片放大缩小 -->
@@ -51,5 +53,6 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-sql.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-xml-doc.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-groovy.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
 </body>
 </html>
