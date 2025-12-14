@@ -1,0 +1,13 @@
+/* 针对初始化加载文本的样式 */
+#app {
+  font-family: 'Microsoft YaHei', sans-serif; /* 更改字体 */
+  color: #666; /* 更改文字颜色 */
+  font-size: 18px; /* 更改字体大小 */
+  text-align: center; /* 文字居中 */
+  padding-top: 100px; /* 调整垂直位置 */
+  /* 可以添加背景图等更复杂的效果 */
+  /* background: url('loading-bg.jpg') no-repeat center center; */
+}
+.markdown-section pre>code{
+    padding: 1.2em 5px;
+}

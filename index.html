@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="icon" href="/favicon.png" type="image/x-icon" />
   <link rel="stylesheet" data-style-group="themeable" media="(prefers-color-scheme: dark)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+  <link rel="stylesheet" href="./style/style.css">
+  
 </head>
 <body>
   <div id="app">加载中...</div>
@@ -15,6 +17,7 @@
     window.$docsify = {
       name: 'zly-a2568的博客',
       repo: 'https://github.com/zly-a2568',
+      themeColor: '#3F51B5',
       loadSidebar: true,
       el: '#app',
       search: {
@@ -23,11 +26,30 @@
         noData: '😞 找不到结果', // 无结果提示[citation:1]
         depth: 1 // 搜索标题深度，可设为1-6[citation:1][citation:3]
       },
-      coverpage: true
+      coverpage: true,
+      // 拷贝代码
+        copyCode: {
+            buttonText: '复制',
+            errorText: '错误',
+            successText: '已复制'
+        }
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <!-- 代码拷贝 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+  <!-- 图片放大缩小 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <!-- 代码块代码 -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-json.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-yaml.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-http.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-sql.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-xml-doc.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-groovy.min.js"></script>
 </body>
 </html>
