@@ -4,7 +4,6 @@
   color: #ffffff; /* 更改文字颜色 */
   font-size: 18px; /* 更改字体大小 */
   text-align: center; /* 文字居中 */
-  padding:50%;
   /* 可以添加背景图等更复杂的效果 */
   /* background: url('loading-bg.jpg') no-repeat center center; */
 }
